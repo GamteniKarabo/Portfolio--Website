@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamteni Karabo | Software Engineer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <nav>
+        <div class="logo">GK</div>
+        <div class="menu-toggle" id="menuToggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Gamteni <span class="accent">Karabo</span></h1>
+                <h2>Aspiring Software Engineer</h2>
+                <div class="hero-buttons">
+                    <a href="about.html" class="btn primary">Learn More</a>
+                    <a href="contact.html" class="btn secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-img-container">
+                    <img src="images/half.pic.jpg" alt="Profile Image" id="profileImage">
+                </div>
+            </div>
+        </section>
+
+        <section class="intro">
+            <h2>Building <span class="accent">Digital Solutions</span></h2>
+            <p>I'm passionate about creating clean, efficient code that solves real-world problems. With a focus on web
+                development and software engineering, I strive to build applications that make a difference.</p>
+            <a href="cv/Gamteni_Karabo_CV.pdf" download class="btn download">
+                <i class="fas fa-download"></i> Download CV
+            </a>
+        </section>
+
+        <section class="featured-skills">
+            <h2>Technical <span class="accent">Expertise</span></h2>
+            <div class="skill-preview">
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>HTML & CSS</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress"
+                            style="width: 90%; background: linear-gradient(to right, #ff7eb3, #ff758c);"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>JavaScript</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress"
+                            style="width: 85%; background: linear-gradient(to right, #7f7fd5, #86a8e7);"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Node.js</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress"
+                            style="width: 75%; background: linear-gradient(to right, #56ab2f, #a8e063);"></div>
+                    </div>
+                </div>
+            </div>
+            <a href="skills.html" class="btn secondary">View All Skills</a>
+        </section>
+
+        <section class="project-preview">
+            <h2>Recent <span class="accent">Projects</span></h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-img">
+                        <div class="in-progress">
+                            <div class="pulse"></div>
+                            <span>In Progress</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>A full-stack e-commerce solution with cart functionality and payment integration.</p>
+                        <div class="project-tags">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img"></div>
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>A personal portfolio website showcasing my projects and skills. Built with a focus on clean
+                            design and user experience.</p>
+                        <div class="project-tags">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="projects.html" class="btn secondary">View All Projects</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">GK</div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/GamteniKarabo" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="www.linkedin.com/in/karabo-gamteni" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Gamteni Karabo. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/progress.js"></script>
+</body>
+
+</html>

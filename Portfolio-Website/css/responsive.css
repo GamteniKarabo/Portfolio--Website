@@ -1,0 +1,328 @@
+/* Responsive Styles */
+
+/* Base styles for larger screens are already defined in styles.css */
+
+/* Large screens (desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+    .hero {
+        min-height: 85vh;
+    }
+
+    .hero-content h1 {
+        font-size: 4.5rem;
+    }
+}
+
+/* Medium screens (tablets, 992px and up) */
+@media (max-width: 1199.98px) {
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .profile-img-container {
+        width: 250px;
+        height: 250px;
+    }
+
+    .skills-container,
+    .timeline-container {
+        max-width: 90%;
+    }
+}
+
+/* Small screens (tablets, 768px and up) */
+@media (max-width: 991.98px) {
+    .container {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: var(--spacing-xl) var(--spacing-md);
+        gap: var(--spacing-xl);
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .about-image {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .timeline-content {
+        width: 45%;
+    }
+}
+
+/* Extra small screens (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .container {
+        width: 100%;
+        padding: 0 var(--spacing-md);
+    }
+
+    nav {
+        padding: var(--spacing-md);
+    }
+
+    .menu-toggle {
+        display: flex;
+        z-index: 101;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        background-color: var(--secondary-bg);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.3s ease;
+        z-index: 100;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.2rem;
+    }
+
+    section {
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+
+    .projects-container,
+    .cert-container,
+    .upcoming-container,
+    .availability-container {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--spacing-lg);
+    }
+
+    .footer-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: var(--spacing-md);
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .timeline-container:before {
+        left: 30px;
+    }
+
+    .timeline-dot {
+        left: 30px;
+    }
+
+    .timeline-content {
+        width: calc(100% - 60px);
+        margin-left: 60px;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content:before,
+    .timeline-item:nth-child(even) .timeline-content:before {
+        left: -15px;
+        border-right: 15px solid var(--card-bg);
+        border-left: none;
+    }
+
+    .projects-filter {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filter-btn {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+/* Tiny screens (small phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .profile-img-container {
+        width: 200px;
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .info-item,
+    .cert-item,
+    .availability-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-icon,
+    .cert-icon,
+    .availability-icon {
+        margin: 0 auto var(--spacing-sm);
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+}
+
+/* For landscape orientation on mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: var(--spacing-xl) var(--spacing-md);
+    }
+
+    .nav-links {
+        padding: var(--spacing-lg) 0;
+    }
+
+    .profile-img-container {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Print styles */
+@media print {
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    .progress-container,
+    nav,
+    footer,
+    .hero-buttons,
+    .cta-buttons,
+    .social-links,
+    .project-links {
+        display: none;
+    }
+
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+
+    .card-bg,
+    .primary-bg,
+    .secondary-bg {
+        background-color: white;
+        color: black;
+    }
+}
+
+/* High contrast mode for accessibility */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-bg: #000000;
+        --secondary-bg: #222222;
+        --card-bg: #333333;
+        --text-primary: #ffffff;
+        --text-secondary: #dddddd;
+        --accent: #ff00ff;
+        --accent-hover: #cc00cc;
+    }
+
+    .skill-progress,
+    .btn,
+    .info-icon,
+    .cert-icon,
+    .upcoming-icon,
+    .availability-icon {
+        border: 2px solid white;
+    }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
