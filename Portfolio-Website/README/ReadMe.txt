@@ -103,10 +103,10 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 🤝 Contact
 
 Gamteni Karabo
-- Email: gamtenikarabo@gmiail.com
+- Email: [[gamtenikarabo@gmail.com]
 - GitHub: [https://github.com/GamteniKarabo]
-- LinkedIn: [https://liinkedin.com/in/karab-gamteni]
--whatsapp: [+27763004531]
+- LinkedIn: [https://linkedin.com/in/karabo-gamteni]
+- whatsapp: [+27763004531]
 
 ---
 
