@@ -108,7 +108,7 @@ Gamteni Karabo
 - Email: gamtenikarabo@gmail.com
 - GitHub: [https://github.com/GamteniKarabo]
 - LinkedIn: [https://linkedin.com/in/karabo-gamteni]
--whatsapp: [+27763004531]
+- whatsapp: [+27763004531]
 
 ---
 
